@@ -4,6 +4,8 @@ import GallerySection from "../components/GallerySection";
 import HeroSection from "../components/HeroSection";
 import MissionVisionObjectiveSection from "../components/MissionVisionObjectiveSection";
 import Navbar from "../components/Navbar";
+import { MdFacebook } from "react-icons/md";
+import { AiOutlineTwitter } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -58,15 +60,19 @@ export default function Home() {
               ))}
             </div>
 
-            <button>lorem ipsum</button>
+            <div className="text-center">
+              <button>lorem ipsum</button>
+            </div>
           </div>
         </div>
       </section>
 
       <footer>
-        <div className="container">
+        <div className="container footer-contents">
           <div>
-            <h3>Subscribe to our weekly news letter</h3>
+            <h3>
+              Subscribe to our weekly <br /> news letter
+            </h3>
             <form action="">
               <input type="email" />
               <button>Submit</button>
@@ -98,13 +104,17 @@ export default function Home() {
 
             <ul>
               <li>
-                <a href="#">Facebook</a>
+                <a href="#">
+                  <MdFacebook /> Facebook
+                </a>
               </li>
               <li>
-                <a href="#">Twitter</a>
+                <a href="#">
+                  <AiOutlineTwitter /> Twitter
+                </a>
               </li>
               <li>
-                <a href="#">LinkedIn</a>
+                <a href="#"> LinkedIn</a>
               </li>
               <li>
                 <a href="#">YouTube Channel</a>
@@ -127,6 +137,9 @@ export default function Home() {
             </ul>
           </div>
         </div>
+        <p>
+          &copy; Rwanda. All rights reserved | <a href="#">Privacy policy</a>
+        </p>
       </footer>
     </main>
   );
